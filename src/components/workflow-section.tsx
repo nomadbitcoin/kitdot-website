@@ -63,8 +63,8 @@ export function WorkflowSection() {
         </div>
 
         {/* Workflow Steps */}
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {workflowSteps.map((step, index) => (
               <div key={index} className="relative">
                 <Card className="group hover:shadow-primary/20 transition-all duration-300 border-border/50 hover:border-primary/30 h-full">

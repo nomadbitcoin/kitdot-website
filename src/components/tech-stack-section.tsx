@@ -95,34 +95,6 @@ export function TechStackSection() {
           ))}
         </div>
 
-        {/* Quick benefits */}
-        <div className="grid md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">0</div>
-            <div className="text-foreground font-medium mb-2">
-              Web2 Dependencies
-            </div>
-            <div className="text-sm text-muted-foreground">
-              Fully decentralized infrastructure with Polkadot Cloud
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">130+</div>
-            <div className="text-foreground font-medium mb-2">
-              Smart Contracts
-            </div>
-            <div className="text-sm text-muted-foreground">
-              Audited contracts ready for deployment
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">100%</div>
-            <div className="text-foreground font-medium mb-2">TypeScript</div>
-            <div className="text-sm text-muted-foreground">
-              End-to-end type safety across the entire stack
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
