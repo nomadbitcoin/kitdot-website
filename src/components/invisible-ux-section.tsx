@@ -1,36 +1,40 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  Eye, 
-  Users, 
-  Smartphone, 
+import {
+  Eye,
+  Users,
+  Smartphone,
   CreditCard,
   Zap,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 
 const uxFeatures = [
   {
     icon: Eye,
     title: "Invisible Infrastructure",
-    description: "Users interact with your app naturally, without knowing blockchain is powering it behind the scenes."
+    description:
+      "Users interact with your app naturally, without knowing blockchain is powering it behind the scenes.",
   },
   {
     icon: Smartphone,
     title: "Familiar Interfaces",
-    description: "Standard web and mobile UX patterns that users already understand and expect."
+    description:
+      "Standard web and mobile UX patterns that users already understand and expect.",
   },
   {
     icon: CreditCard,
     title: "Gasless Transactions",
-    description: "Pay fees with any token or sponsor transactions entirely - no crypto knowledge required."
+    description:
+      "Pay fees with any token or sponsor transactions entirely - no crypto knowledge required.",
   },
   {
     icon: Users,
     title: "Onboard Anyone",
-    description: "Email signups, social logins, and embedded wallets make Web3 accessible to everyone."
-  }
+    description:
+      "Email signups, social logins, and embedded wallets make Web3 accessible to everyone.",
+  },
 ];
 
 export function InvisibleUXSection() {
@@ -50,8 +54,9 @@ export function InvisibleUXSection() {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Following Mythos Chain's success, we're building for the 99% of users who don't 
-              care about blockchain - they just want great apps that work seamlessly.
+              Following Mythos Chain's success, we're building for the 99% of
+              users who don't care about blockchain - they just want great apps
+              that work seamlessly.
             </p>
           </div>
 
@@ -60,7 +65,10 @@ export function InvisibleUXSection() {
             {/* Left: Features */}
             <div className="space-y-6">
               {uxFeatures.map((feature, index) => (
-                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/20">
+                <Card
+                  key={index}
+                  className="group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/20"
+                >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-secondary border border-border/50 group-hover:border-primary/20 transition-colors flex-shrink-0">
@@ -85,21 +93,29 @@ export function InvisibleUXSection() {
               <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 border border-primary/10">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4 text-primary">The Vision</h3>
+                    <h3 className="text-2xl font-bold mb-4 text-primary">
+                      The Vision
+                    </h3>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      Most people don't want to use "blockchain apps" - they want apps that solve real problems. 
-                      Kit-Dot helps you build applications where the blockchain is completely invisible to users.
+                      Most people don't want to use "blockchain apps" - they
+                      want apps that solve real problems. kitdot helps you build
+                      applications where the blockchain is completely invisible
+                      to users.
                     </p>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div className="flex items-center text-sm text-muted-foreground">
                       <Zap className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                      <span>Web2-native onboarding with Web3-native benefits</span>
+                      <span>
+                        Web2-native onboarding with Web3-native benefits
+                      </span>
                     </div>
                     <div className="flex items-center text-sm text-muted-foreground">
                       <Zap className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                      <span>Serving both casual users and DeFi power users</span>
+                      <span>
+                        Serving both casual users and DeFi power users
+                      </span>
                     </div>
                     <div className="flex items-center text-sm text-muted-foreground">
                       <Zap className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
@@ -113,15 +129,22 @@ export function InvisibleUXSection() {
                 <CardContent className="p-0">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">Ready to build invisible blockchain apps?</h4>
-                      <p className="text-sm text-muted-foreground">Get started with templates designed for mainstream adoption.</p>
+                      <h4 className="font-semibold text-primary mb-1">
+                        Ready to build invisible blockchain apps?
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Get started with templates designed for mainstream
+                        adoption.
+                      </p>
                     </div>
-                    <Button 
-                      variant="ghost" 
-                      size="sm" 
+                    <Button
+                      variant="ghost"
+                      size="sm"
                       className="text-primary hover:text-primary"
                       onClick={() => {
-                        document.querySelector('.bg-code-bg')?.scrollIntoView({ behavior: 'smooth' });
+                        document
+                          .querySelector(".bg-code-bg")
+                          ?.scrollIntoView({ behavior: "smooth" });
                       }}
                     >
                       <ArrowRight className="w-4 h-4" />

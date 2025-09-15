@@ -1,8 +1,8 @@
-# Kit-Dot: TypeScript Development Toolkit for Polkadot Cloud
+# kitdot: TypeScript Development Toolkit for Polkadot Cloud
 
 ## Overview
 
-Kit-Dot is a TypeScript CLI toolkit for building fully decentralized applications on Polkadot Cloud infrastructure. It provides standardized project templates and scaffolding for developers working with smart contracts, frontends, and decentralized cloud services. Currently in development as a project initialization tool with upcoming features for complete dApp development workflow.
+kitdot is a TypeScript CLI toolkit for building fully decentralized applications on Polkadot Cloud infrastructure. It provides standardized project templates and scaffolding for developers working with smart contracts, frontends, and decentralized cloud services. Currently in development as a project initialization tool with upcoming features for complete dApp development workflow.
 
 ## Problem Statement
 
@@ -14,38 +14,44 @@ Kit-Dot is a TypeScript CLI toolkit for building fully decentralized application
 
 ## Solution Architecture
 
-Kit-Dot addresses these issues through:
+kitdot addresses these issues through:
 
 ## Current Features
 
 ### Project Initialization
+
 ```bash
-kit-dot init my-project
+kitdot init my-project
 ```
+
 - Generates standardized project structure for Polkadot Cloud
-- Includes frontend, contracts, and cloud-functions templates  
+- Includes frontend, contracts, and cloud-functions templates
 - TypeScript configuration for all components
 - Basic project scaffolding and dependencies setup
 
 ## Coming Soon Features
 
 ### MCP Server Integration
+
 - Model Context Protocol server for AI development assistance
 - Automated code generation and smart contract interaction
 - Intelligent project analysis and recommendations
 
 ### Enhanced Templates
+
 - Templates with seamless wallet generation and onboarding
 - Pre-configured authentication flows
 - Ready-to-use wallet integration patterns
 
 ### 130 Pre-built Smart Contracts
+
 - Audited contract library from thirdweb integration
 - NFT, token, marketplace, and governance contracts
 - One-command deployment of battle-tested contracts
 - Upgradeable proxy patterns included
 
 ### Fully Decentralized Cloud Services
+
 - **Acurast Parachain**: Decentralized cloud functions execution
 - **Crust Network**: IPFS hosting and storage via Apillon SDK
 - **Polkadot Cloud Native**: No AWS or traditional web2 dependencies
@@ -82,27 +88,31 @@ my-polkadot-dapp/
 
 ## Project Templates
 
-Kit-Dot generates complete project structures with the following components:
+kitdot generates complete project structures with the following components:
 
 ### Smart Contracts
+
 - Foundry development environment with testing framework
-- Hardhat deployment scripts for Polkadot Cloud networks  
+- Hardhat deployment scripts for Polkadot Cloud networks
 - Access to 130+ audited contracts from thirdweb library
 - Upgradeable proxy patterns and OpenZeppelin standards
 
 ### Frontend Applications
+
 - React + TypeScript with Polkadot Cloud integration
 - Wagmi hooks for EVM compatibility
 - Tailwind CSS for styling
 - Automatic wallet generation and onboarding flows
 
 ### Decentralized Cloud Functions
+
 - Acurast parachain function templates
 - TypeScript development environment
 - Contract event monitoring and indexing
 - Fully decentralized execution environment
 
 ### Documentation
+
 - mdbook project documentation
 - Auto-generated API references
 - Developer guides and deployment instructions
@@ -158,14 +168,14 @@ Kit-Dot generates complete project structures with the following components:
 ## Installation
 
 ```bash
-npm install -g kit-dot
+npm install -g kitdot
 ```
 
 ## Quick Start
 
 ```bash
 # Initialize new project
-kit-dot init my-dapp
+kitdot init my-dapp
 cd my-dapp
 
 # Install dependencies
@@ -178,40 +188,46 @@ npm install
 ## Available Commands
 
 ```bash
-kit-dot init [name]     # Create new project (current)
+kitdot init [name]     # Create new project (current)
 ```
 
 ### Coming Soon Commands
+
 ```bash
-kit-dot build           # Build all components
-kit-dot deploy          # Deploy to Polkadot Cloud
-kit-dot contracts       # Browse thirdweb contract library
-kit-dot generate        # Generate wallets and authentication
+kitdot build           # Build all components
+kitdot deploy          # Deploy to Polkadot Cloud
+kitdot contracts       # Browse thirdweb contract library
+kitdot generate        # Generate wallets and authentication
 ```
 
 ## Development Workflow (Planned)
 
 ### 1. Project Initialization
+
 ```bash
-kit-dot init my-dapp          # Generate complete project structure
+kitdot init my-dapp          # Generate complete project structure
 ```
 
 ### 2. Smart Contract Development
+
 - Access to 130+ audited contracts from thirdweb
 - Foundry-based development environment
 - Deployment to Polkadot Cloud networks
 
-### 3. Frontend Development  
+### 3. Frontend Development
+
 - React + TypeScript templates
 - Automatic wallet generation and onboarding
 - Polkadot Cloud integration
 
 ### 4. Decentralized Cloud Functions
+
 - Acurast parachain deployment
 - Event monitoring and indexing
 - Fully decentralized backend services
 
 ### 5. Hosting and Storage
+
 - IPFS hosting via Crust Network
 - Decentralized storage solutions
 - Apillon SDK integration
@@ -219,6 +235,7 @@ kit-dot init my-dapp          # Generate complete project structure
 ## Configuration
 
 ### Environment Variables
+
 ```bash
 # .env
 APOLLON_API_KEY=your_api_key
@@ -227,7 +244,9 @@ APOLLON_WEBSITE_UUID=your_uuid
 ```
 
 ### Project Structure
+
 Generated projects include pre-configured:
+
 - Polkadot Cloud network connections
 - Acurast function deployment settings
 - IPFS hosting configuration via Crust
@@ -239,8 +258,8 @@ Generated projects include pre-configured:
 ### Development Setup
 
 ```bash
-git clone https://github.com/your-org/kit-dot
-cd kit-dot
+git clone https://github.com/your-org/kitdot
+cd kitdot
 npm install
 npm run build
 npm link
@@ -255,13 +274,16 @@ npm run lint:fix              # Fix formatting
 ```
 
 ### Project Templates
-Kit-Dot provides several templates:
+
+kitdot provides several templates:
+
 - `basic-polkadot-dapp/`: Full-stack decentralized application
 - `contract-only/`: Smart contract development (coming soon)
 - `frontend-only/`: Frontend application (coming soon)
 - Custom templates for specific use cases
 
 ### Thirdweb Contract Integration
+
 - 130+ audited smart contracts available
 - NFT, token, marketplace, and governance contracts
 - One-command deployment and customization
@@ -286,4 +308,4 @@ MIT License - see LICENSE file for details.
 
 ---
 
-Kit-Dot provides standardized tooling for Polkadot Cloud development. Get started with `kit-dot init` and begin building on Polkadot infrastructure.
+kitdot provides standardized tooling for Polkadot Cloud development. Get started with `kitdot init` and begin building on Polkadot infrastructure.

@@ -7,7 +7,7 @@ export function HeroSection() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("npm install -g kit-dot");
+    navigator.clipboard.writeText("npm install -g kitdot");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -25,11 +25,11 @@ export function HeroSection() {
           {/* Logo and title */}
           <div className="space-y-4">
             <div className="inline-flex items-center justify-center w-40 h-40 mb-6">
-              <img src="/logo.png" alt="Kit-Dot Logo" className="w-40 h-40" />
+              <img src="/logo.png" alt="kitdot Logo" className="w-40 h-40" />
             </div>
 
             <h1 className="text-6xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Kit-Dot
+              kitdot
             </h1>
 
             <p className="text-2xl md:text-3xl font-medium text-muted-foreground max-w-2xl mx-auto">
@@ -40,7 +40,7 @@ export function HeroSection() {
           {/* Description */}
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Build applications where users don't even know it's blockchain.
-            Kit-Dot provides a fully decentralized stack with seamless Web2-like
+            kitdot provides a fully decentralized stack with seamless Web2-like
             UX powered by Web3 infrastructure.
           </p>
 
@@ -51,7 +51,7 @@ export function HeroSection() {
                 <div className="flex items-center space-x-3">
                   <Terminal className="w-5 h-5 text-primary" />
                   <code className="text-lg font-mono text-foreground">
-                    npm install -g kit-dot
+                    npm install -g kitdot
                   </code>
                 </div>
                 <Button

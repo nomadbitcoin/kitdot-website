@@ -46,7 +46,7 @@ export const config = createConfig({
   cli: `# Quick Start Commands
 
 # Initialize new project
-kit-dot init my-dapp
+kitdot init my-dapp
 cd my-dapp
 
 # Install dependencies
@@ -62,7 +62,7 @@ cd ../deploy && npx hardhat run scripts/deploy.ts
 cd ../../front && npm run dev
 
 # Coming Soon: One-command deployment
-kit-dot deploy`
+kitdot deploy`,
 };
 
 export function CodeExamplesSection() {
@@ -83,23 +83,30 @@ export function CodeExamplesSection() {
             Code Examples
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            See Kit-Dot in{" "}
+            See kitdot in{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Action
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From smart contracts to decentralized cloud functions, Kit-Dot provides 
-            standardized templates and scaffolding for complete dApp development.
+            From smart contracts to decentralized cloud functions, kitdot
+            provides standardized templates and scaffolding for complete dApp
+            development.
           </p>
         </div>
 
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="cli" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 bg-muted/50">
-              <TabsTrigger value="cli" className="text-sm">CLI Commands</TabsTrigger>
-              <TabsTrigger value="hardhat" className="text-sm">Hardhat Config</TabsTrigger>
-              <TabsTrigger value="frontend" className="text-sm">Frontend Config</TabsTrigger>
+              <TabsTrigger value="cli" className="text-sm">
+                CLI Commands
+              </TabsTrigger>
+              <TabsTrigger value="hardhat" className="text-sm">
+                Hardhat Config
+              </TabsTrigger>
+              <TabsTrigger value="frontend" className="text-sm">
+                Frontend Config
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="cli">
@@ -115,9 +122,13 @@ export function CodeExamplesSection() {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => handleCopy(codeExamples.cli, 'cli')}
+                      onClick={() => handleCopy(codeExamples.cli, "cli")}
                     >
-                      {copiedTab === 'cli' ? "Copied!" : <Copy className="w-4 h-4" />}
+                      {copiedTab === "cli" ? (
+                        "Copied!"
+                      ) : (
+                        <Copy className="w-4 h-4" />
+                      )}
                     </Button>
                   </div>
                 </CardHeader>
@@ -134,7 +145,9 @@ export function CodeExamplesSection() {
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <div>
-                      <CardTitle className="text-lg">Hardhat Configuration</CardTitle>
+                      <CardTitle className="text-lg">
+                        Hardhat Configuration
+                      </CardTitle>
                       <p className="text-sm text-muted-foreground mt-1">
                         Deploy contracts to Passet Hub testnet
                       </p>
@@ -142,9 +155,15 @@ export function CodeExamplesSection() {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => handleCopy(codeExamples.hardhat, 'hardhat')}
+                      onClick={() =>
+                        handleCopy(codeExamples.hardhat, "hardhat")
+                      }
                     >
-                      {copiedTab === 'hardhat' ? "Copied!" : <Copy className="w-4 h-4" />}
+                      {copiedTab === "hardhat" ? (
+                        "Copied!"
+                      ) : (
+                        <Copy className="w-4 h-4" />
+                      )}
                     </Button>
                   </div>
                 </CardHeader>
@@ -161,7 +180,9 @@ export function CodeExamplesSection() {
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <div>
-                      <CardTitle className="text-lg">Frontend Configuration</CardTitle>
+                      <CardTitle className="text-lg">
+                        Frontend Configuration
+                      </CardTitle>
                       <p className="text-sm text-muted-foreground mt-1">
                         Connect React app to Passet Hub
                       </p>
@@ -169,9 +190,15 @@ export function CodeExamplesSection() {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => handleCopy(codeExamples.frontend, 'frontend')}
+                      onClick={() =>
+                        handleCopy(codeExamples.frontend, "frontend")
+                      }
                     >
-                      {copiedTab === 'frontend' ? "Copied!" : <Copy className="w-4 h-4" />}
+                      {copiedTab === "frontend" ? (
+                        "Copied!"
+                      ) : (
+                        <Copy className="w-4 h-4" />
+                      )}
                     </Button>
                   </div>
                 </CardHeader>
@@ -182,7 +209,6 @@ export function CodeExamplesSection() {
                 </CardContent>
               </Card>
             </TabsContent>
-
           </Tabs>
         </div>
       </div>

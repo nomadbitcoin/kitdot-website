@@ -20,7 +20,7 @@ const features = [
     description:
       "Generate standardized project structure for Polkadot Cloud with frontend, contracts, and cloud-functions templates.",
     badge: "Current",
-    highlight: "kit-dot init my-project",
+    highlight: "kitdot init my-project",
   },
   {
     icon: Cloud,
@@ -80,7 +80,7 @@ export function FeaturesSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Build apps that feel like Web2 but run on Web3. Kit-Dot provides
+            Build apps that feel like Web2 but run on Web3. kitdot provides
             templates and tools for creating invisible blockchain experiences
             with zero friction onboarding.
           </p>

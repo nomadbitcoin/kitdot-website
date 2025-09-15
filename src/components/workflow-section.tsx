@@ -1,12 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Terminal, 
-  Code, 
-  Rocket, 
+import {
+  Terminal,
+  Code,
+  Rocket,
   TestTube,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
 } from "lucide-react";
 
 const workflowSteps = [
@@ -14,30 +14,33 @@ const workflowSteps = [
     icon: Terminal,
     step: "01",
     title: "Initialize",
-    description: "Scaffold complete project with contracts, frontend, and cloud functions",
-    command: "kit-dot init my-dapp"
+    description:
+      "Scaffold complete project with contracts, frontend, and cloud functions",
+    command: "kitdot init my-dapp",
   },
   {
     icon: Code,
-    step: "02", 
+    step: "02",
     title: "Develop",
-    description: "Write smart contracts with Foundry, build React frontend with TypeScript",
-    command: "forge build && npm run dev"
+    description:
+      "Write smart contracts with Foundry, build React frontend with TypeScript",
+    command: "forge build && npm run dev",
   },
   {
     icon: TestTube,
     step: "03",
     title: "Test",
     description: "Run comprehensive tests on contracts and frontend components",
-    command: "forge test && npm test"
+    command: "forge test && npm test",
   },
   {
     icon: Rocket,
     step: "04",
     title: "Deploy",
-    description: "Deploy to Polkadot Cloud with decentralized hosting and functions",
-    command: "kit-dot deploy"
-  }
+    description:
+      "Deploy to Polkadot Cloud with decentralized hosting and functions",
+    command: "kitdot deploy",
+  },
 ];
 
 export function WorkflowSection() {
@@ -53,12 +56,12 @@ export function WorkflowSection() {
             From Idea to{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Production
-            </span>
-            {" "}in Minutes
+            </span>{" "}
+            in Minutes
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need in one TypeScript toolkit - contracts, frontend, backend, 
-            testing, and deployment all working together seamlessly.
+            Everything you need in one TypeScript toolkit - contracts, frontend,
+            backend, testing, and deployment all working together seamlessly.
           </p>
         </div>
 
@@ -88,7 +91,7 @@ export function WorkflowSection() {
                         <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                           {step.description}
                         </p>
-                        
+
                         {/* Command */}
                         <div className="bg-code-bg border border-code-border rounded-md p-3">
                           <code className="text-xs text-foreground/90 font-mono">
@@ -112,7 +115,6 @@ export function WorkflowSection() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
