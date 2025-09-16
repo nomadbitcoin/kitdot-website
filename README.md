@@ -1,22 +1,12 @@
-# Welcome to your Lovable project
+# kitdot Website
 
-## Project info
+TypeScript Development Toolkit for Polkadot Cloud
 
-**URL**: https://lovable.dev/projects/9d2ac7d2-e291-49fd-b644-0a1f3dcaccee
+## Development
 
-## How can I edit this code?
+**Local Development**
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/9d2ac7d2-e291-49fd-b644-0a1f3dcaccee) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+To work locally using your preferred IDE:
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -60,14 +50,12 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/9d2ac7d2-e291-49fd-b644-0a1f3dcaccee) and click on Share -> Publish.
+Build the project for production:
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+npm run build
+```
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+The built files will be in the `dist` directory, ready for deployment to any static hosting service.
