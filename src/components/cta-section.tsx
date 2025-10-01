@@ -81,7 +81,7 @@ export function CTASection() {
 
             <Button variant="ghost" size="lg" className="min-w-52" asChild>
               <a
-                href="http://docs.kitdot.dev/"
+                href="https://polkadot-survival-guide.w3d.community/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

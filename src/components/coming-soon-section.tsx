@@ -1,50 +1,37 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Sparkles, 
-  Wallet, 
-  Zap, 
+import {
+  Sparkles,
+  Wallet,
   Shield,
   Cpu,
-  Users
+  Code2
 } from "lucide-react";
 
 const comingSoonFeatures = [
   {
-    icon: Sparkles,
-    title: "PolkaVM Templates",
-    description: "Leverage PolkaVM capabilities for advanced smart contract development with enhanced performance and flexibility.",
-    highlight: "Next-gen runtime"
-  },
-  {
-    icon: Wallet,
-    title: "Multi-Asset Fee Payment",
-    description: "Pay transaction fees with any asset - no need to hold native tokens. True UX simplification for end users.",
-    highlight: "Any token fees"
-  },
-  {
     icon: Shield,
-    title: "Account Abstraction",
-    description: "Smart contract wallets with custom logic, social recovery, and programmable transaction flows.",
+    title: "Account Abstraction Templates",
+    description: "Smart contract wallet templates with custom logic, social recovery, and programmable transaction flows for enhanced user experience.",
     highlight: "Smart wallets"
   },
   {
-    icon: Zap,
-    title: "Embedded Wallets",
-    description: "Apillon-powered embedded wallets enable frictionless onboarding - users don't even need to install wallet extensions.",
-    highlight: "Zero-friction onboarding"
+    icon: Wallet,
+    title: "Multi-Asset Fee Payment Templates",
+    description: "Template for paying transaction fees with any asset - no need to hold native tokens. True UX simplification for end users.",
+    highlight: "Any token fees"
+  },
+  {
+    icon: Code2,
+    title: "130+ Pre-built Smart Contracts",
+    description: "Access audited contract library integration. NFT, token, marketplace, and governance contracts ready to deploy on Polkadot Cloud.",
+    highlight: "Battle-tested contracts"
   },
   {
     icon: Cpu,
-    title: "AI-Powered Templates",
-    description: "MCP server integration with intelligent code generation, contract optimization, and automated testing.",
-    highlight: "AI assistance"
-  },
-  {
-    icon: Users,
-    title: "Invisible Blockchain UX",
-    description: "Templates designed for applications where users don't realize they're using blockchain technology.",
-    highlight: "Web2-like experience"
+    title: "MCP Server for AI-Powered Building",
+    description: "Model Context Protocol server integration with intelligent code generation, contract optimization, and automated testing workflows.",
+    highlight: "AI-native development"
   }
 ];
 

@@ -40,8 +40,8 @@ export function HeroSection() {
           {/* Description */}
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Build applications where users don't even know it's blockchain.
-            kitdot provides a fully decentralized stack with seamless Web2-like
-            UX powered by Web3 infrastructure.
+            Kitdot provides templates and tools for creating invisible
+            blockchain experiences with zero friction onboarding.
           </p>
 
           {/* Installation command */}
@@ -81,7 +81,7 @@ export function HeroSection() {
 
             <Button variant="ghost" size="lg" className="min-w-52" asChild>
               <a
-                href="http://docs.kitdot.dev/"
+                href="https://polkadot-survival-guide.w3d.community/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
