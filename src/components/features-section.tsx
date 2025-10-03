@@ -103,7 +103,9 @@ export function FeaturesSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Build apps that feel like Web2 but run on Web3.
+            Build apps that feel like Web2 but run on Web3. Kitdot provides
+            templates and tools for creating invisible blockchain experiences
+            with zero friction onboarding.
           </p>
         </div>
 

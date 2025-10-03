@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       <FeaturesSection />
       <PolkadotCloudSection />

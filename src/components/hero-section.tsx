@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Terminal, Copy, Github, BookOpen, Zap } from "lucide-react";
+import DotGrid from "@/components/ui/dot-grid";
+import { Terminal, Copy, Github, BookOpen } from "lucide-react";
 import { useState } from "react";
 
 export function HeroSection() {
@@ -13,36 +14,49 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-50" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-16">
+      {/* DotGrid Background */}
+      <div className="absolute inset-0 z-0">
+        <DotGrid
+          dotSize={7}
+          gap={23}
+          baseColor="#6B7280"
+          activeColor="#E272FF"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
 
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
+      {/* Gradient overlay for contrast */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/20 to-black/70 z-[1]" />
 
-      <div className="container relative z-10 mx-auto px-4 py-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Logo and title */}
-          <div className="space-y-4">
-            <div className="inline-flex items-center justify-center w-40 h-40 mb-6">
-              <img src="/logo.png" alt="kitdot Logo" className="w-40 h-40" />
-            </div>
-
-            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              kitdot
-            </h1>
-
-            <p className="text-2xl md:text-3xl font-medium text-muted-foreground max-w-2xl mx-auto">
-              TypeScript Development Toolkit for Polkadot Cloud
-            </p>
+      <div className="container relative z-10 mx-auto px-4 py-8 md:py-20">
+        <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-10">
+          {/* Logo */}
+          <div className="flex items-center justify-center gap-4">
+            <img
+              src="/logo-tshirt.png"
+              alt="kitdot icon"
+              className="h-24 md:h-32 w-auto"
+            />
           </div>
 
-          {/* Description */}
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Build applications where users don't even know it's blockchain.
-            Kitdot provides templates and tools for creating invisible
-            blockchain experiences with zero friction onboarding.
+          {/* Main headline */}
+          <p className="text-4xl md:text-6xl lg:text-6xl text-white leading-tight font-black">
+            Build applications where users
+            <br className="hidden md:block" />
+            don’t even know it’s blockchain.
           </p>
+
+          {/* <div className="space-y-3 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl font-semibold text-pink-400">
+              TypeScript Development Toolkit for Polkadot Cloud
+            </p>
+          </div> */}
+          {/* Subheadline & description */}
 
           {/* Installation command */}
           <Card className="max-w-2xl mx-auto bg-code-bg border-code-border">
@@ -68,7 +82,12 @@ export function HeroSection() {
 
           {/* Action buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="outline" size="lg" className="min-w-52" asChild>
+            <Button
+              variant="outline"
+              size="lg"
+              className="min-w-52 border-pink-500 text-white hover:bg-pink-500/10 hover:text-white"
+              asChild
+            >
               <a
                 href="https://github.com/nomadbitcoin/kitdot"
                 target="_blank"
@@ -79,7 +98,12 @@ export function HeroSection() {
               </a>
             </Button>
 
-            <Button variant="ghost" size="lg" className="min-w-52" asChild>
+            <Button
+              variant="ghost"
+              size="lg"
+              className="min-w-52 text-white hover:text-pink-400 hover:bg-transparent"
+              asChild
+            >
               <a
                 href="https://polkadot-survival-guide.w3d.community/"
                 target="_blank"
@@ -89,26 +113,6 @@ export function HeroSection() {
                 Documentation
               </a>
             </Button>
-          </div>
-
-          {/* Quick stats */}
-          <div className="grid grid-cols-3 gap-8 max-w-xl mx-auto pt-8">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">3min</div>
-              <div className="text-sm text-muted-foreground">Setup Time</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">130+</div>
-              <div className="text-sm text-muted-foreground">
-                Smart Contracts
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">0</div>
-              <div className="text-sm text-muted-foreground">
-                Web2 Dependencies
-              </div>
-            </div>
           </div>
         </div>
       </div>
