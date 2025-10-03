@@ -37,11 +37,12 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-10">
           {/* Logo */}
           <div className="flex items-center justify-center gap-4">
-            <img
-              src="/logo-tshirt.png"
-              alt="kitdot icon"
-              className="h-24 md:h-32 w-auto"
-            />
+            <h1
+              className="text-6xl md:text-9xl font-black bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent"
+              // style={{ fontFamily: "Intro Rust, sans-serif" }}
+            >
+              kitdot
+            </h1>
           </div>
 
           {/* Main headline */}
